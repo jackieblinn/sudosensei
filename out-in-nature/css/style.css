@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(155, 217, 180);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.grid-item {
+    background-color: rgb(91, 139, 69);
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.item1 {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+    background-color: whitesmoke;
+    padding: 15px;
+    grid-gap: 3px;
+}
+
+.menu-item {
+    background-color: rgb(242, 182, 147);
+    font-size: 30px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    background-color: white;
+    text-align: center;
+}
+
+
+/* Jackie's Challenge - Whole CSS page*/

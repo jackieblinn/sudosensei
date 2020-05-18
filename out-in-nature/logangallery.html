@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logan's Gallery</title>
+
+
+    <style>
+        .grid-container2 {
+            display: grid;
+            grid-template-columns: auto;
+            padding: 10px;
+            grid-gap: 10px;
+        }
+        
+        .grid-item2 {
+            background-color: rgb(91, 139, 69);
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+        }
+        
+        .grid-container3 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+            grid-gap: 10px;
+        }
+        
+        .grid-item3 {
+            background-color: rgb(91, 139, 69);
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <div class="grid-container">
+        <div class="grid-item item1">
+            <h1>Logan's gallery</h1>
+            <p>This is Logan's gallery and contains some of Logan's favorite nature images!</p>
+            <button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> <!--NEW FEATURE and Logan Challenge area-->
+                Click me to display Date and Time.</button>
+
+            <p id="demo"></p>
+
+            <div class="menu-container">
+
+                <div class="menu-item"><a href="index.html">Home</a></div>
+                <div class="menu-item"><a href="elianastory.html">Eliana's Story</a></div>
+                <div class="menu-item"><a href="elianagallery.html">Eliana's Gallery</a></div>
+                <div class="menu-item"><a href="leahstory.html">Leah's Story</a></div>
+                <div class="menu-item"><a href="leahgallery.html">Leah's Gallery</a></div>
+                <div class="menu-item"><a href="loganstory.html">Logan's Story</a></div>
+                <div class="menu-item">Logan's Gallery</div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="grid-container2">
+        <div class="grid-item2 item1">
+            <h2>Gallery</h2>
+            <h2>Select some of the text: <input type="text" value="I love nature!" onselect="myFunction()"></h2>
+            <!--NEW FEATURE-->
+
+            <script>
+                function myFunction() {
+                    alert("You selected some text!");
+                }
+            </script>
+
+            <p>This gallery contains images from a snowy mountain, beach plane rides, and hot deserts!</p>
+        </div>
+    </div>
+
+
+    <div class="grid-container3">
+        <div class="grid-item3">
+
+
+            <script>
+                function bigImg(x) {
+                    x.style.height = "700px";
+                    x.style.width = "600px";
+                }
+
+                function normalImg(x) {
+                    x.style.height = "500px";
+                    x.style.width = "400px";
+                }
+            </script>
+            <img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="0" src="images/loganmount.jpg" alt="mountain" style="width: 400px; height: 500px">
+            <!--NEW FEATURE-->
+            <p>This is an image of a snowy mountain</p>
+        </div>
+
+        <div class="grid-item3">
+            <img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="0" src="images/loganplane.JPG" alt="beach and plane" style="width: 400px; height: 500px">
+            <p>This is a picture of a beach outside a plane window that Logan took</p>
+        </div>
+
+        <div class="grid-item3">
+            <img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="0" src="images/logandesert.JPG" alt="desert" style="width: 400px; height: 500px">
+            <p>This is an image of a desert</p>
+        </div>
+    </div>
+
+
+
+
+    <div class="footer">
+        <footer>The Nature Team!Created by &copy; Logan McKinley <a href="mailto:lmckinley@eastsideprep.org?Subject=Hello!">Email me!</a></footer>
+    </div>
+
+
+
+
+</body>
+
+</html>

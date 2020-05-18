@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+        .item2 {
+            grid-column: 1 / span 3;
+            grid-row: 2;
+        }
+        
+        .grid-container2 {
+            display: grid;
+            grid-template-columns: auto;
+            padding: 10px;
+            grid-gap: 10px;
+        }
+        
+        .grid-item2 {
+            background-color: rgb(91, 139, 69);
+            text-align: center;
+            font-size: 10px;
+            padding: 10px;
+        }
+        
+        .grid-container3 {
+            display: grid;
+            grid-template-columns: auto;
+            padding: 10px;
+            grid-gap: 10px;
+        }
+        
+        .grid-item3 {
+            background-color: rgb(91, 139, 69);
+            text-align: center;
+            font-size: 10px;
+            padding: 10px;
+        }
+        
+        .grid-container4 {
+            display: grid;
+            grid-template-columns: auto;
+            padding: 10px;
+            grid-gap: 10px;
+        }
+        
+        .grid-item4 {
+            background-color: rgb(91, 139, 69);
+            text-align: center;
+            font-size: 10px;
+            padding: 10px;
+        }
+        
+        .grid-container5 {
+            display: grid;
+            grid-template-columns: auto;
+            padding: 10px;
+            grid-gap: 10px;
+        }
+        
+        .grid-item5 {
+            background-color: rgb(91, 139, 69);
+            text-align: center;
+            font-size: 10px;
+            padding: 10px;
+        }
+        
+        .grid-container6 {
+            display: grid;
+            grid-template-columns: auto;
+            padding: 10px;
+            grid-gap: 10px;
+        }
+        
+        .grid-item6 {
+            background-color: rgb(91, 139, 69);
+            text-align: center;
+            font-size: 10px;
+            padding: 10px;
+        }
+        
+        .grid-container7 {
+            display: grid;
+            grid-template-columns: auto;
+            padding: 10px;
+            grid-gap: 10px;
+        }
+        
+        .grid-item7 {
+            background-color: rgb(91, 139, 69);
+            text-align: center;
+            font-size: 10px;
+            padding: 10px;
+        }
+        
+        img {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            width: 200px;
+        }
+        /* New feature*/
+        
+        div {
+            border-style: solid;
+            border-bottom-color: rgb(242, 182, 147);
+        }
+        /* New feature*/
+    </style>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <div class="grid-container">
+        <div class="grid-item item1">
+            <h1>Home</h1>
+            <p>This page is all about the team that created this website!</p>
+            <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">  <!--NEW FEATURE-->
+                Click me to display Date and Time.</button>
+
+            <p id="demo"></p>
+            <div class="menu-container">
+
+                <div class="menu-item">Home</div>
+                <div class="menu-item"><a href="elianastory.html">Eliana's Story</a></div>
+                <div class="menu-item"><a href="elianagallery.html">Eliana's Gallery</a></div>
+                <div class="menu-item"><a href="leahstory.html">Leah's Story</a></div>
+                <div class="menu-item"><a href="leahgallery.html">Leah's Gallery</a></div>
+                <div class="menu-item"><a href="loganstory.html">Logan's Story</a></div>
+                <div class="menu-item"><a href="logangallery.html">Logan's Gallery</a></div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="grid-container2">
+        <div class="grid-item2">
+            <h1>Meet the Team!</h1>
+            <h2 style="font-size: 20px">Select some of the text: <input type="text" value="I love nature!" onselect="myFunction()"></h2>
+            <!--NEW FEATURE-->
+            <script>
+                function myFunction() {
+                    alert("You selected some text!");
+                }
+            </script>
+            <!--NEW FEATURE-->
+
+            <p style="font-size: 20px">This exciting page is all about nature and people's nature experiences!</p>
+        </div>
+    </div>
+
+    <div class="grid-container3">
+        <div class="grid-item3">
+            <h2>Jackie</h2>
+            <p style="font-size: 20px">Jackie created the global CSS file, made the home page, and uploaded the website to the server!</p>
+            <script>
+                function bigImg(x) {
+                    x.style.height = "500px";
+                    x.style.width = "400px";
+                }
+
+                function normalImg(x) {
+                    x.style.height = "300px";
+                    x.style.width = "200px";
+                }
+            </script>
+            <img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="0" src="images/jackie.jpg" alt="person" style="width: 200px; height: 300px">
+            <!--NEW FEATURE-->
+        </div>
+    </div>
+
+    <div class="grid-container4">
+        <div class="grid-item4">
+            <h2>Eliana</h2>
+            <p style="font-size: 20px">Eliana put a lot of hard work into creating Eliana's gallery and Eliana's story!</p>
+            <img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="0" src="images/eliana.jpg" alt="person" style="width: 200px; height: 300px">
+        </div>
+    </div>
+
+
+    <div class="grid-container5">
+        <div class="grid-item5">
+            <h2>Leah</h2>
+            <p style="font-size: 20px">Leah put a lot of hard work into creating Leah's gallery and Leah's story!</p>
+            <img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="0" src="images/leah.jpg" alt="person" style="width: 200px; height: 300px">
+        </div>
+    </div>
+
+    <div class="grid-container6">
+        <div class="grid-item6">
+            <h2>Logan</h2>
+            <p style="font-size: 20px">Logan put a lot of hard work into creating Logan's gallery and Logan's story!</p>
+            <img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="0" src="images/logan.jpg" alt="person" style="width: 200px; height: 300px">
+        </div>
+    </div>
+
+    <div class="grid-container7">
+        <div class="grid-item7">
+            <h2>Contact Us!</h2>
+            <p style="font-size: 20px">Here is Jackie's email <a href="mailto:jblinn@eastsideprep.org?Subject=Hello!">Email me!</a></p>
+            <p style="font-size: 20px">Here is Eliana's email <a href="mailto:eswai@eastsideprep.org?Subject=Hello!">Email me!</a></p>
+            <p style="font-size: 20px">Here is Leah's email <a href="mailto:lguse@eastsideprep.org?Subject=Hello!">Email me!</a></p>
+            <p style="font-size: 20px">Here is Logan's email <a href="mailto:lmckinley@eastsideprep.org?Subject=Hello!">Email me!</a></p>
+        </div>
+    </div>
+
+
+
+
+    <div class="footer">
+        <footer>The Nature Team! Created by &copy; Jackie Blinn <a href="mailto:jblinn@eastsideprep.org?Subject=Hello!">Email me!</a></footer>
+    </div>
+
+
+
+</body>
+
+</html>
